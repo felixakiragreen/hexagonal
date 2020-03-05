@@ -1,38 +1,54 @@
 {
-  "name": "hexagonal",
-  "author": "Felix Green",
+  "name": "@f*g/hexagonal",
   "version": "0.1.0",
+  "description": "⬡⬢ tools for building hexagonal things ⎔⬣",
+  "keywords": [
+    "hexagon"
+  ],
+  "homepage": "https://github.com/felixakiragreen/hexagonal#readme",
+  "bugs": {
+    "url": "https://github.com/felixakiragreen/hexagonal/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixakiragreen/hexagonal.git"
+  },
   "license": "Unlicense",
+  "author": "Felix Green",
   "main": "dist/index.js",
+  "module": "dist/hexagonal.esm.js",
   "typings": "dist/index.d.ts",
+  "directories": {
+    "test": "test"
+  },
   "files": [
     "dist"
   ],
-  "module": "dist/hexagonal.esm.js",
   "scripts": {
-    "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test",
     "lint": "tsdx lint",
-    "prepare": "tsdx build"
+    "prepare": "tsdx build",
+    "start": "tsdx watch",
+    "test": "tsdx test"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "jsxSingleQuote": true,
+    "printWidth": 80,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "dependencies": {},
   "devDependencies": {
     "@types/jest": "^25.1.3",
     "husky": "^4.2.3",
     "tsdx": "^0.12.3",
     "tslib": "^1.11.0",
     "typescript": "^3.8.2"
-  },
-  "prettier": {
-    "printWidth": 80,
-    "semi": false,
-    "singleQuote": true,
-    "jsxSingleQuote": true,
-    "trailingComma": "es5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "tsdx lint"
-    }
   }
 }
