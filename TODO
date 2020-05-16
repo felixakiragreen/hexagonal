@@ -1,7 +1,11 @@
 Plans:
   + creating ⬡ svg paths
     + and tips
+  + create ⬡ bevels
   - creating ⎔ svg paths
+
+Fix:
+  - height is not calculated properly when given a `bBodyTip`
 
 FUTURE:  
   - Building hexagonal grid systems
