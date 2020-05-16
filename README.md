@@ -8,7 +8,7 @@ This project is the beginning of something much bigger, an entire system for bui
 
 I know it could/should be organized better, but I'm letting expand organically as I use it to build my hexagonal things.
 
-## Capapibilites
+## Capabilities
 
 ### `HexProps`
 
